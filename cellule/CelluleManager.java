@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.io.*;
 
-
+//asd
 public class CelluleManager{
 
 	private int x_limite;
