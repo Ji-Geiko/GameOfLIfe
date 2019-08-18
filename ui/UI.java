@@ -4,7 +4,6 @@ import javax.swing.*;
 import cellule.*;
 
 import java.awt.*;
-import variable.Variable;;
 
 /**
  * UI
@@ -22,13 +21,10 @@ public class UI extends JFrame{
     private JPanel pan = new JPanel();
     JButton bouton2 = new JButton("start");
 
-    Variable var = new Variable();
-
     public UI(int w, int h){
         this.width = w;
         this.height = h;
 
-        var.getLifeCycle();
 /*
         setLayout(new BorderLayout());
         setSize(w, h);
