@@ -1,5 +1,6 @@
 package ui;
 import javax.swing.*;
+import javax.swing.plaf.*;
 
 import cellule.*;
 
@@ -10,16 +11,15 @@ import java.awt.*;
  */
 public class UI extends JFrame{
     private MyCanvas canvas;
-    private int LifeCycle;
     private static Graphics g;
 
     CelluleManager manager;
 
+    private TabbedPaneUI TabbePane;
 
     private int width;
     private int height;
     private JPanel pan = new JPanel();
-    JButton bouton2 = new JButton("start");
 
     public UI(int w, int h){
         this.width = w;
@@ -39,6 +39,7 @@ public class UI extends JFrame{
         */
         manager = new CelluleManager(this,30,30);
 
+        TabbePane.
         JPanel mainContainer = new JPanel();
         mainContainer.setLayout(new BoxLayout(mainContainer, BoxLayout.PAGE_AXIS));
 

@@ -21,11 +21,11 @@ public class LifeGame{// implements ActionListener{
 				
 
 //**********************************************************************************
-				manager.init();
+			/*	manager.init();
 							
 				manager.load();
 
-				manager.start();
+				manager.start();*/
 //**********************************************************************************
 			//}		  
 	}
