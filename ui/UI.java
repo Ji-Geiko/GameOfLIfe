@@ -39,7 +39,6 @@ public class UI extends JFrame{
         */
         manager = new CelluleManager(this,30,30);
 
-        TabbePane.
         JPanel mainContainer = new JPanel();
         mainContainer.setLayout(new BoxLayout(mainContainer, BoxLayout.PAGE_AXIS));
 
