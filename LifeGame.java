@@ -1,7 +1,6 @@
 //java lifeGame 7 7 initialState.txt 1000
 import ui.StartInterface;
 import ui.*;
-import variable.*;
 import cellule.*;
 import java.awt.event.*;
 import java.awt.event.ActionListener;;
