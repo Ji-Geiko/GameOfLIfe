@@ -1,10 +1,8 @@
 package ui;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.Event.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.*;
 
 public class BoutonStart extends JButton implements MouseListener {
     private String name;
