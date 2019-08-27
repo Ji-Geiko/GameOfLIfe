@@ -4,9 +4,13 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import cellule.*;
+import ui.*;
+
 public class BoutonStart extends JButton implements MouseListener {
     private String name;
     private Image img;
+
 
     public BoutonStart(String str) {
         super(str);
@@ -27,7 +31,17 @@ public class BoutonStart extends JButton implements MouseListener {
 
     // Méthode appelée lors du clic de souris
     public void mouseClicked(MouseEvent event) {
-        System.out.println("clique");
+        System.out.println("clique");	
+
+        UI ui = new UI(300, 300);
+        
+        CelluleManager manager = new CelluleManager(ui, 30, 30);
+
+        manager.init();
+        
+        manager.load();
+
+		manager.start();
     }
 
     // Méthode appelée lors du survol de la souris

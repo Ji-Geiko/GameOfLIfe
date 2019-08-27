@@ -85,6 +85,8 @@ public class CelluleManager{
 		System.out.println();*/
 
 		this.print();
+		System.out.println("CelluleManager :: load -> Done");
+
 	}
 
 	public void start(){
@@ -157,6 +159,8 @@ public class CelluleManager{
 		if(stillAlive && this.lifeCycle<this.maxGeneration){
 			this.start();
 		}
+		System.out.println("CelluleManager :: start -> Done");
+
 	}
 
 //load

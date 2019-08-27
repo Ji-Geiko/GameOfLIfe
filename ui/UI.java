@@ -32,9 +32,9 @@ public class UI extends JFrame {
         this.setVisible(true);
     }
 
-    public Graphics getGraphics() {
+    /*public Graphics getGraphics() {
         return canvas.getGraphics();
-    }
+    }*/
 
     public int getWidth() {
         return this.width;
