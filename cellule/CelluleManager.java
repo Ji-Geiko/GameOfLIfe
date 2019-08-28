@@ -208,7 +208,7 @@ public class CelluleManager{
 				System.out.println("|");
 			}*/
 		}
-		ui.getGraphics().setColor(Color.white);
+		ui.getGraphics().setColor(Color.WHITE);
 		try {
 			Thread.sleep(150);
 		} catch (Exception e) {

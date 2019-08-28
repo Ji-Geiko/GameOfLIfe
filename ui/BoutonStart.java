@@ -11,7 +11,6 @@ public class BoutonStart extends JButton implements MouseListener {
     private String name;
     private Image img;
 
-
     public BoutonStart(String str) {
         super(str);
         this.name = str;
@@ -35,13 +34,14 @@ public class BoutonStart extends JButton implements MouseListener {
 
         UI ui = new UI(300, 300);
         
-        CelluleManager manager = new CelluleManager(ui, 30, 30);
+        CelluleManager manager = new CelluleManager(ui, 30, 30);    
 
         manager.init();
         
         manager.load();
 
-		manager.start();
+        manager.start();//boucle infini
+        //end
     }
 
     // Méthode appelée lors du survol de la souris
