@@ -157,13 +157,16 @@ public class CelluleManager{
 		print();
 
 		if(stillAlive && this.lifeCycle<this.maxGeneration){
+			try {
+				Thread.sleep(150);
+			} catch (Exception e) {
+	
+			}
 			this.start();
 		}
 		System.out.println("CelluleManager :: start -> Done");
 
 	}
-
-//load
 
 	private Cellule getCellule(int x, int y){
 		if(x < 1 || x > this.x_limite || y < 1 || y > this.y_limite)
@@ -209,11 +212,7 @@ public class CelluleManager{
 			}*/
 		}
 		ui.getGraphics().setColor(Color.WHITE);
-		try {
-			Thread.sleep(150);
-		} catch (Exception e) {
 
-		}
 		ui.getGraphics().clearRect(70, 0, 150, 10);
 		ui.getGraphics().drawString( ""+this.lifeCycle, 150, 10);
 
